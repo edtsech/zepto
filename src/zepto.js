@@ -1,3 +1,7 @@
+//     Zepto.js
+//     (c) 2010, 2011 Thomas Fuchs
+//     Zepto.js may be freely distributed under the MIT license.
+
 var Zepto = (function() {
   var undefined, key, css, $$, classList,
     emptyArray = [], slice = emptyArray.slice,
@@ -65,7 +69,7 @@ var Zepto = (function() {
     }
   }
 
-  $.extend = function(target){ 
+  $.extend = function(target){
     slice.call(arguments, 1).forEach(function(source) {
       for (key in source) target[key] = source[key];
     })
@@ -93,7 +97,7 @@ var Zepto = (function() {
     indexOf: emptyArray.indexOf,
     concat: emptyArray.concat,
     slice: function(){
-      return $(slice.apply(this, arguments)); 
+      return $(slice.apply(this, arguments));
     },
     ready: function(callback){
       if (document.readyState == 'complete' || document.readyState == 'loaded') callback();

@@ -1,3 +1,7 @@
+//     Zepto.js
+//     (c) 2010, 2011 Thomas Fuchs
+//     Zepto.js may be freely distributed under the MIT license.
+
 (function($){
   var $$ = $.qsa, handlers = {}, _zid = 1;
   function zid(element) {
@@ -108,7 +112,7 @@
       event.initEvent(type, true, true)
     }
     event.data = data;
-    return this.each(function(){  
+    return this.each(function(){
       this.dispatchEvent(event);
     });
   };

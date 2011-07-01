@@ -1,3 +1,7 @@
+//     Zepto.js
+//     (c) 2010, 2011 Thomas Fuchs
+//     Zepto.js may be freely distributed under the MIT license.
+
 (function($, undefined){
   $.fn.anim = function(properties, duration, ease, callback){
     var transforms = [], opacity, key, that = this;
